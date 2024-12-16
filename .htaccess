@@ -1,0 +1,10 @@
+# Ativa o módulo de reescrita
+RewriteEngine On
+
+# Redireciona todas as solicitações para index.html, exceto arquivos e diretórios reais
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# Define o arquivo de índice padrão
+DirectoryIndex index.html
