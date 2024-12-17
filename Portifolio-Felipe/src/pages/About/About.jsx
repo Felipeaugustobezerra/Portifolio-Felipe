@@ -139,10 +139,11 @@ const About = () => {
                             Analysis and systems development
                           </h4>
                           <p className="timeline-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Natus sint atque accusantium rem, quidem
-                            molestiae, cumque soluta beatae consequatur quam eos
-                            enim deleniti dolorum laudantium?
+                            I graduated in system analysis and development from
+                            Uninassau in 2022, lasting 24 months, where it was
+                            possible to learn about programming, databases,
+                            networks, project management, software engineering,
+                            etc.
                           </p>
                         </div>
                         <div className="timeline-item">
@@ -154,10 +155,10 @@ const About = () => {
                             Introduction to Cybersecurity
                           </h4>
                           <p className="timeline-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Natus sint atque accusantium rem, quidem
-                            molestiae, cumque soluta beatae consequatur quam eos
-                            enim deleniti dolorum laudantium?
+                            The Cisco Introduction to Cybersecurity course,
+                            offered by the Cisco Networking Academy platform, is
+                            aimed at beginners and aims to provide a basic
+                            understanding of fundamental cybersecurity concepts.
                           </p>
                         </div>
                         <div className="timeline-item">
@@ -169,10 +170,9 @@ const About = () => {
                             Assembly and maintenance of computers and notebooks
                           </h4>
                           <p className="timeline-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Natus sint atque accusantium rem, quidem
-                            molestiae, cumque soluta beatae consequatur quam eos
-                            enim deleniti dolorum laudantium?
+                            My training provides practical and theoretical
+                            knowledge to install, configure, diagnose and repair
+                            hardware and software in computing devices.
                           </p>
                         </div>
                       </div>
