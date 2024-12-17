@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IoSettingsOutline } from "react-icons/io5";
+import { IoMdColorPalette } from "react-icons/io";
 import "./switchercolors.css";
 
 const SwitcherColors = () => {
@@ -50,7 +50,7 @@ const SwitcherColors = () => {
         onClick={toggleSwitcher}
         aria-label="Abrir configurações de cores"
       >
-        <IoSettingsOutline className="rotating-icon" />
+        <IoMdColorPalette />
       </div>
       <div className="colors">
         <span

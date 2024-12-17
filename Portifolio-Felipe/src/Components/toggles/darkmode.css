@@ -23,10 +23,11 @@
   color: var(--text-black-900);
   right: 100%;
   border: 1px solid var(--bg-black-50);
-  margin-right: 20px;
+  margin-right: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 50%;
+  font-size: 20px;
 }
 .style-switcher-darkmode .s-icon-darkmode i {
   display: flex;
@@ -45,4 +46,55 @@
 .light-color:hover {
   color: yellow;
   font-size: 20px;
+}
+/* ======================== RESPONSIVE DARKMODE ========================= */
+
+/* Telas até 768px (tablets) */
+@media screen and (max-width: 768px) {
+  .style-switcher-darkmode {
+    width: 160px; /* Reduz a largura */
+    right: -160px; /* Mantém escondido */
+    top: 50px; /* Ajusta posição */
+    font-size: 14px; /* Reduz tamanho da fonte */
+  }
+
+  .s-icon-darkmode {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; /* Ajusta espaçamento */
+  }
+
+  .style-switcher-darkmode .s-icon-darkmode i {
+    font-size: 16px; /* Reduz tamanho do ícone */
+    padding: 10px;
+  }
+
+  .dark-color:hover,
+  .light-color:hover {
+    font-size: 18px; /* Evita aumentar demais a fonte */
+  }
+}
+
+/* Telas até 480px (celulares) */
+@media screen and (max-width: 480px) {
+  .style-switcher-darkmode {
+    width: 120px; /* Reduz ainda mais a largura */
+    right: -120px; /* Mantém escondido */
+    top: 10px; /* Ajusta posição */
+    border-radius: 8px; /* Bordas mais suaves */
+  }
+
+  .s-icon-darkmode {
+    margin-right: 10px;
+    border: 1px solid var(--bg-black-50); /* Mantém estilo */
+  }
+
+  .style-switcher-darkmode .s-icon-darkmode i {
+    /* Ícones menores */
+  }
+
+  .dark-color:hover,
+  .light-color:hover {
+    font-size: 16px; /* Evita saltos de tamanho */
+  }
 }

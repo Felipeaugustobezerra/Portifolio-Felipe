@@ -1,7 +1,7 @@
-/* Estilo do switcher */
+/* ======================== STYLE SWITCHER ======================== */
 .style-switcher {
   position: fixed;
-  right: -200px;
+  right: -200px; /* Esconde inicialmente */
   top: 20px;
   width: 200px;
   background: #fff;
@@ -10,6 +10,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   z-index: 10;
+  font-size: 20px;
 }
 
 .style-switcher.open {
@@ -17,6 +18,7 @@
   width: 17%;
 }
 
+/* Botão de Toggle */
 .style-switcher-toggler {
   position: absolute;
   top: 50%;
@@ -24,7 +26,7 @@
   transform: translateY(-50%);
   background: #333;
   color: #fff;
-  padding: 15px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,7 +55,6 @@
 
 .colors span {
   display: inline-block;
-
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -61,11 +62,10 @@
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* Cor ativa */
 .colors span.active {
   border: 2px solid #000;
   transform: scale(1.2);
@@ -98,26 +98,50 @@
   background: #f021b2;
 }
 
-/* Responsividade */
+/* ======================== RESPONSIVIDADE ======================== */
+
+/* Tablets e telas menores (até 768px) */
 @media (max-width: 768px) {
   .style-switcher {
-    width: 100%;
-    right: -100%;
+    width: 100%; /* Ocupar largura total */
+    right: -100%; /* Escondido fora da tela */
   }
 
   .style-switcher.open {
-    right: 0;
+    right: 0; /* Exibe o painel */
     width: 100%;
   }
 
   .style-switcher-toggler {
-    left: -50px;
-    width: 40px;
-    height: 40px;
+    left: -50px; /* Ajusta a posição do botão */
   }
 
   .colors span {
-    width: 30px;
+    width: 30px; /* Reduz tamanho das cores */
     height: 30px;
+  }
+}
+
+/* Celulares menores (até 480px) */
+@media (max-width: 480px) {
+  .style-switcher {
+    width: 50%;
+    right: -50%;
+    top: 0px; /* Ajusta a posição */
+    border-radius: 0; /* Remove bordas arredondadas */
+  }
+
+  .style-switcher.open {
+    right: 0;
+    width: 40%;
+  }
+  .colors {
+    justify-content: space-between; /* Centraliza os itens */
+    gap: 1px; /* Espaçamento menor */
+  }
+
+  .colors span {
+    width: 25px; /* Reduz ainda mais as cores */
+    height: 25px;
   }
 }

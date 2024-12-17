@@ -2,6 +2,8 @@ import React from "react";
 import "./home.css";
 import ME from "../../assets/img/IMG_5096.jpeg";
 import Typing from "../../Components/Typing/Typing";
+import SwitcherColors from "../../Components/toggles/SwitcherColors";
+import DarkMode from "../../Components/toggles/DarkMode";
 
 const Home = () => {
   return (
@@ -14,7 +16,7 @@ const Home = () => {
                 Hello,my name is <span className="name">Felipe augusto</span>
               </h3>
               <h1 className="my-profession">
-                I'm a
+                I&apos;m a
                 <span className="typing">
                   <Typing />
                 </span>
@@ -32,6 +34,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <SwitcherColors />
+      <DarkMode />
     </div>
   );
 };
