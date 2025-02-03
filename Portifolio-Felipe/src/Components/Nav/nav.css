@@ -1,32 +1,35 @@
-nav{
-    background:var(--bg-black-100);
-    width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
-   position: fixed;
-   left: 50%;
-   transform: translateX(-50%);
-   bottom: 2rem;
-   display: flex;
-   gap: 0.9rem;
-   border-radius: 3rem;
-   backdrop-filter: blur(15px);
-   list-style: none;
+nav .nav {
+}
+
+nav {
+  background: var(--bg-black-100);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.2rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  list-style: none;
 }
 
 nav a {
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: var(rgba(0, 0, 0, 0.4));
-    font-size: 1.1rem;
-    
+  background: transparent;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(rgba(0, 0, 0, 0.4));
+  font-size: 1rem;
+  color: black;
 }
-nav a:hover{
-    background: var(--skin-color);
+nav a:hover {
+  background: var(--skin-color);
 }
-nav a.active{
-    background: var(--skin-color);
+nav a.active {
+  background: var(--skin-color);
 }

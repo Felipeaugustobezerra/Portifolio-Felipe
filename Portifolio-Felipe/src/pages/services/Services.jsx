@@ -1,4 +1,3 @@
-import React from "react";
 import "./services.css";
 import { FaNetworkWired } from "react-icons/fa";
 import { FaSuitcase } from "react-icons/fa6";

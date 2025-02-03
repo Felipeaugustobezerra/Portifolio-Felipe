@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Nav from "../src/Components/Nav/Nav";
 import About from "./pages/About/About";
 import Services from "./pages/services/Services";
+import Contact from "./pages/Contact/Contact";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -13,5 +14,6 @@ createRoot(document.getElementById("root")).render(
     <Home />
     <About />
     <Services />
+    <Contact />
   </StrictMode>
 );
