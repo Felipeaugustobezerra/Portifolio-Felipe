@@ -1,4 +1,4 @@
-name: Deploy para Hostinger via FTP
+name: Deploy para Hostinger via FTP (Vite)
 
 on:
   push:
@@ -13,16 +13,21 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Instalar dependências e Build (se necessário)
-        run: |
-          npm install   # Ajuste para o seu gerenciador de pacotes (yarn, pnpm)
-          npm run build # Altere caso seu comando de build seja diferente
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18 # Altere para a versão do seu projeto
 
-      - name: Enviar arquivos via FTP
+      - name: Instalar dependências e Build com Vite
+        run: |
+          npm install   # Ou "yarn install" / "pnpm install"
+          npm run build # Gera a pasta "dist/" (configuração padrão do Vite)
+
+      - name: Enviar arquivos via FTP para Hostinger
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build/ # Ajuste para o diretório gerado pelo build
-          server-dir: /public_html/ # Ajuste para a pasta onde deseja fazer o deploy
+          local-dir: ./dist/ # Diretório gerado pelo Vite
+          server-dir: /public_html/ # Ajuste para onde quer fazer o deploy
