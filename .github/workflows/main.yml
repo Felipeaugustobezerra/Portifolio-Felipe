@@ -3,7 +3,7 @@ name: Deploy para Hostinger via FTP
 on:
   push:
     branches:
-      - master  # Executa apenas quando há push na branch master
+      - master # Executa apenas quando há push na branch master
 
 jobs:
   build:
@@ -19,10 +19,10 @@ jobs:
           npm run build # Altere caso seu comando de build seja diferente
 
       - name: Enviar arquivos via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build/  # Ajuste para o diretório gerado pelo build
-          server-dir: /public_html/  # Ajuste para a pasta onde deseja fazer o deploy
+          local-dir: ./build/ # Ajuste para o diretório gerado pelo build
+          server-dir: /public_html/ # Ajuste para a pasta onde deseja fazer o deploy
