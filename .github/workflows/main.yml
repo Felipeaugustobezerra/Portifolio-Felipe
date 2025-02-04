@@ -18,10 +18,13 @@ jobs:
         with:
           node-version: 18 # Altere para a versão do seu projeto
 
-      - name: Instalar dependências e Build com Vite
+      - name: Instalar dependências e garantir react-icons
         run: |
-          npm install   # Ou "yarn install" / "pnpm install"
-          npm run build # Gera a pasta "dist/" (configuração padrão do Vite)
+          npm install   # Garante que todas as dependências estão instaladas corretamente
+          ls -la node_modules/react-icons # Verifica se o pacote foi instalado corretamente
+
+      - name: Build do projeto com Vite
+        run: npm run build
 
       - name: Enviar arquivos via FTP para Hostinger
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
