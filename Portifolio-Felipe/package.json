@@ -10,10 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "emailjs-com": "^3.2.0",
-=======
->>>>>>> 7f0cd5e (First commit)
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

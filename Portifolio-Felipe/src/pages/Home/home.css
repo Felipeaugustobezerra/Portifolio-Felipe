@@ -2,22 +2,15 @@
 #home {
   min-height: 100vh;
   display: flex;
-<<<<<<< HEAD
   flex-wrap: wrap; /* Adicionado para ajustar layout em telas menores */
   align-items: center; /* Centraliza verticalmente */
   color: var(--text-black-900);
   padding: 20px; /* Adicionado para espaçamento interno */
-=======
-  color: var(--text-black-900);
->>>>>>> 7f0cd5e (First commit)
 }
 .home .home-info {
   flex: 0 0 60%;
   max-width: 60%;
-<<<<<<< HEAD
   text-align: left; /* Para melhorar legibilidade */
-=======
->>>>>>> 7f0cd5e (First commit)
 }
 h3.hello {
   font-size: 30px;
@@ -35,10 +28,7 @@ h3.my-profession {
 }
 .typing {
   color: var(--skin-color);
-<<<<<<< HEAD
   margin-left: 5px;
-=======
->>>>>>> 7f0cd5e (First commit)
 }
 .home .home-info p {
   margin-bottom: 70px;
@@ -47,11 +37,7 @@ h3.my-profession {
 }
 .home .home-img {
   flex: 0 0 40%;
-<<<<<<< HEAD
   max-width: 40%;
-=======
-  max-width: 50%;
->>>>>>> 7f0cd5e (First commit)
   text-align: center;
   position: relative;
 }
@@ -60,13 +46,8 @@ h3.my-profession {
   position: absolute;
   width: 80px;
   height: 80px;
-<<<<<<< HEAD
   right: 0px;
   bottom: -10px;
-=======
-  right: 20px;
-  bottom: -40px;
->>>>>>> 7f0cd5e (First commit)
   border-bottom: 10px solid var(--skin-color);
   border-right: 10px solid var(--skin-color);
 }
@@ -75,7 +56,6 @@ h3.my-profession {
   position: absolute;
   width: 80px;
   height: 80px;
-<<<<<<< HEAD
   left: 0px;
   top: -25px;
   border-top: 10px solid var(--skin-color);
@@ -146,17 +126,5 @@ h3.my-profession {
     height: auto;
     border-radius: 10px; /* Bordas mais suaves */
   }
-=======
-  left: 20px;
-  top: -40px;
-  border-top: 10px solid var(--skin-color);
-  border-left: 10px solid var(--skin-color);
-}
-
-.home .home-img img {
-  margin: auto;
-  border-radius: 40px;
-  height: 400px;
->>>>>>> 7f0cd5e (First commit)
 }
 /* -- ======================== HOME SECTION END =========================== -- */
