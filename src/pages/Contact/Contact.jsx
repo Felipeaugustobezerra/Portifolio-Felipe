@@ -1,4 +1,5 @@
 import "./contact.css";
+import "./form.css";
 import emailjs from "emailjs-com";
 import { useRef, useState } from "react";
 
@@ -62,8 +63,8 @@ const Contact = () => {
             I&apos;M VERY RESPONSIVE TO MESSAGES
           </h4>
           <form ref={formRef} onSubmit={sendEmail}>
-            <div className="row">
-              <div className="form-item col-6 padd-15">
+            <div className="form-row-1">
+              <div className="form-item padd-15">
                 <div className="form-group">
                   <input
                     type="text"
@@ -74,7 +75,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="form-item col-6 padd-15">
+              <div className="form-item padd-15">
                 <div className="form-group">
                   <input
                     type="email"
@@ -86,8 +87,8 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="row">
-              <div className="form-item col-12 padd-15">
+            <div className="form-row-2">
+              <div className="form-item padd-15">
                 <div className="form-group">
                   <input
                     type="text"
@@ -99,8 +100,8 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="row">
-              <div className="form-item col-12 padd-15">
+            <div className="form-row-2">
+              <div className="form-item padd-15">
                 <div className="form-group">
                   <textarea
                     name="message"

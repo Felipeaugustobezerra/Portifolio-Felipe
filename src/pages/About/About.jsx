@@ -41,7 +41,7 @@ const About = () => {
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Age: <span> 26</span>
+                        Age: <span> 27</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
