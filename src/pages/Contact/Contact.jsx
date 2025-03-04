@@ -5,26 +5,33 @@ import { useRef, useState } from "react";
 
 const Contact = () => {
   const formRef = useRef();
-  const [message, setMessage] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState(""); // Estado para a mensagem do modal
+  const [isSuccess, setIsSuccess] = useState(false); // Estado para definir se o modal é de sucesso ou erro
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID", // Substitua pelo seu Service ID
-        "YOUR_TEMPLATE_ID", // Substitua pelo seu Template ID
+        "service_snz0ewa", // Substitua pelo seu Service ID
+        "template_7qun848", // Substitua pelo seu Template ID
         formRef.current,
-        "YOUR_USER_ID" // Substitua pelo seu User ID
+        "Sa_sDNVtd7YaA6IfL" // Substitua pelo seu User ID
       )
       .then(
         (result) => {
           console.log(result.text);
-          setMessage("Message sent successfully!");
+          setModalMessage("Your message was sent successfully!");
+          setIsSuccess(true);
+          setIsModalOpen(true);
+          e.target.reset(); // Limpa o formulário
         },
         (error) => {
-          console.log(error.text);
-          setMessage("Failed to send message. Please try again.");
+          console.error("EmailJS Error:", error);
+          setModalMessage("Failed to send message. Please try again later.");
+          setIsSuccess(false);
+          setIsModalOpen(true);
         }
       );
   };
@@ -38,7 +45,7 @@ const Contact = () => {
               <h2>Contact Me</h2>
             </div>
           </div>
-          <h3 className="contact-title padd-15 ">Have You Any Questions ? </h3>
+          <h3 className="contact-title padd-15 ">Have You Any Questions?</h3>
           <h4 className="contact-sub-title padd-15">
             I&apos;M AT YOUR SERVICES
           </h4>
@@ -120,7 +127,22 @@ const Contact = () => {
               </div>
             </div>
           </form>
-          {message && <p className="message">{message}</p>}
+
+          {/* Modal de sucesso/erro */}
+          {isModalOpen && (
+            <div className="modal-overlay">
+              <div className={`modal ${isSuccess ? "success" : "error"}`}>
+                <h3>{isSuccess ? "Success!" : "Error"}</h3>
+                <p>{modalMessage}</p>
+                <button
+                  className="btn-close"
+                  onClick={() => setIsModalOpen(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </div>
