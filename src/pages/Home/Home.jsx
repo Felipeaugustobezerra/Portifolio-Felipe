@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import ME from "../../assets/img/IMG_5096.jpeg";
+import ME from "../../assets/img/IMG_5589.jpeg";
 import Typing from "../../Components/Typing/Typing";
 import SwitcherColors from "../../Components/toggles/SwitcherColors";
 import DarkMode from "../../Components/toggles/DarkMode";

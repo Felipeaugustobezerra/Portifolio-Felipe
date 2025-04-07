@@ -56,7 +56,7 @@
   width: 100%;
   max-width: 500px;
   padding: 12px;
-  background-color: #007bff;
+  background-color: var(--skin-color);
   color: #fff;
   border-radius: 6px;
   font-size: 16px;

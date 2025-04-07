@@ -25,19 +25,20 @@ const Nav = () => {
         <AiOutlineUser />
       </a>
       <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
-      >
-        <AiOutlineMenu />
-      </a>
-      <a
         href="#portifolio"
         onClick={() => setActiveNav("#portifolio")}
         className={activeNav === "#portifolio" ? "active" : ""}
       >
         <MdCardTravel />
       </a>
+      <a
+        href="#services"
+        onClick={() => setActiveNav("#services")}
+        className={activeNav === "#services" ? "active" : ""}
+      >
+        <AiOutlineMenu />
+      </a>
+
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}
