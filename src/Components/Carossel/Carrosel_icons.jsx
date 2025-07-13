@@ -20,7 +20,7 @@ import CSS from '../../assets/icons/CSS/CSS.ico';
 import HTML from '../../assets/icons/HTML/HTML.ico';
 import JS from '../../assets/icons/JS/JS.ico';
 import TS from '../../assets/icons/TS/TS.ico';
-import NEXT from '../../assets/icons/NextJS/NextJS.ico';
+import NEXT from '../../assets/icons/Next/next.ico';
 
 const CarroselIcons = () => {
   return (
