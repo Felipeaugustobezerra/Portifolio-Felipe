@@ -20,7 +20,7 @@ import CSS from '../../assets/icons/CSS/CSS.ico';
 import HTML from '../../assets/icons/HTML/HTML.ico';
 import JS from '../../assets/icons/JS/JS.ico';
 import TS from '../../assets/icons/TS/TS.ico';
-import NextJS from '../../assets/icons/NextJS/NextJS.ico';
+import NEXT from '../../assets/icons/NextJS/NextJS.ico';
 
 const CarroselIcons = () => {
   return (
@@ -53,7 +53,7 @@ const CarroselIcons = () => {
         <img className='carousel-icon' src={TS}></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='carousel-icon' src={NextJS}></img>
+        <img className='carousel-icon' src={NEXT}></img>
       </SwiperSlide>
     </Swiper>
   );
