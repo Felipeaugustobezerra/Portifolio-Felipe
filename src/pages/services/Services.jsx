@@ -1,27 +1,27 @@
-import "./services.css";
-import { FaNetworkWired } from "react-icons/fa";
-import { FaSuitcase } from "react-icons/fa6";
-import { FaMobileAlt } from "react-icons/fa";
-import { FaLaptop } from "react-icons/fa6";
+import './services.css';
+import { FaNetworkWired } from 'react-icons/fa';
+import { FaSuitcase } from 'react-icons/fa6';
+import { FaMobileAlt } from 'react-icons/fa';
+import { FaLaptop } from 'react-icons/fa6';
 
 const Services = () => {
   return (
-    <div className="main-content">
-      <section className="service section" id="services">
-        <div className="container">
+    <div className='main-content'>
+      <section className='service section' id='services'>
+        <div className='container'>
           {/*<!-- Container Service Start  -->*/}
-          <div className="row">
-            <div className="section-title padd-15">
+          <div className='row'>
+            <div className='section-title padd-15'>
               <h2>Services</h2>
             </div>
           </div>
-          <div className="row">
+          <div className='row'>
             {/*<!-- row Service Start  -->*/}
             {/*<!--  Service item Start  -->*/}
-            <div className="service-item padd-15">
-              <div className="service-item-inner">
-                <div className="icon">
-                  <i className="fa">
+            <div className='service-item padd-15'>
+              <div className='service-item-inner'>
+                <div className='icon'>
+                  <i className='fa'>
                     <FaLaptop />
                   </i>
                 </div>
@@ -29,10 +29,10 @@ const Services = () => {
                 <p></p>
               </div>
             </div>
-            <div className="service-item padd-15">
-              <div className="service-item-inner">
-                <div className="icon">
-                  <i className="fa">
+            <div className='service-item padd-15'>
+              <div className='service-item-inner'>
+                <div className='icon'>
+                  <i className='fa'>
                     <FaMobileAlt />
                   </i>
                 </div>
@@ -40,10 +40,10 @@ const Services = () => {
                 <p></p>
               </div>
             </div>
-            <div className="service-item padd-15">
-              <div className="service-item-inner">
-                <div className="icon">
-                  <i className="fa">
+            <div className='service-item padd-15'>
+              <div className='service-item-inner'>
+                <div className='icon'>
+                  <i className='fa'>
                     <FaSuitcase />
                   </i>
                 </div>
@@ -51,10 +51,10 @@ const Services = () => {
                 <p></p>
               </div>
             </div>
-            <div className="service-item padd-15">
-              <div className="service-item-inner">
-                <div className="icon">
-                  <i className="fa">
+            <div className='service-item padd-15'>
+              <div className='service-item-inner'>
+                <div className='icon'>
+                  <i className='fa'>
                     <FaNetworkWired />
                   </i>
                 </div>

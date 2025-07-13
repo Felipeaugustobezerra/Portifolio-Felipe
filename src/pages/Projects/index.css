@@ -1,12 +1,8 @@
 /* src/components/ProjectsSection.css */
-.projects-section {
+.projects section {
   padding: 4rem 2rem;
   background: var(--bg-black-900);
   text-align: center;
-}
-.projects-section h2 {
-  font-size: 1.5rem;
-  color: var(--text-black-900);
 }
 
 .projects-grid {
